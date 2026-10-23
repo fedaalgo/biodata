@@ -1,2 +1,2 @@
 # biodata
-biodata
+open research and writing
