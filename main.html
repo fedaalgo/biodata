@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Federico Daniel Alegría Gómez</title>
+<title>federico daniel alegría gómez</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
 /* ── Gruvbox Light ── */
 :root[data-theme="light"]{
   --bg:#fbf1c7;--bg1:#ebdbb2;--bg2:#d5c4a1;
   --ink:#3c3836;--ink-mid:#665c54;--ink-light:#928374;
-  --accent:#076678;--rule:#d5c4a1;--yr:#b57614;
+  --accent:#427b58;--rule:#d5c4a1;--yr:#b57614;--date:#9d0006;
   color-scheme:light;
 }
 /* ── Gruvbox Dark ── */
 :root[data-theme="dark"]{
   --bg:#282828;--bg1:#3c3836;--bg2:#504945;
   --ink:#ebdbb2;--ink-mid:#bdae93;--ink-light:#928374;
-  --accent:#83a598;--rule:#504945;--yr:#fabd2f;
+  --accent:#8ec07c;--rule:#504945;--yr:#fabd2f;--date:#fb4934;
   color-scheme:dark;
 }
 /* fallback for OS preference before JS runs */
@@ -27,20 +27,20 @@
   :root:not([data-theme="light"]){
     --bg:#282828;--bg1:#3c3836;--bg2:#504945;
     --ink:#ebdbb2;--ink-mid:#bdae93;--ink-light:#928374;
-    --accent:#83a598;--rule:#504945;--yr:#fabd2f;
+    --accent:#8ec07c;--rule:#504945;--yr:#fabd2f;--date:#fb4934;
     color-scheme:dark;
   }
 }
 
---serif:'Lora',Georgia,serif;
+--sans:'Inter',system-ui,sans-serif;
 --mono:'JetBrains Mono','Fira Mono',monospace;
 
 *{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-padding-top:env(safe-area-inset-top,0px);}
+html{font-size:19.2px;scroll-padding-top:env(safe-area-inset-top,0px);}
 body{
   background:var(--bg);color:var(--ink);
-  font-family:var(--serif,Lora,Georgia,serif);
-  font-size:17px;line-height:1.75;
+  font-family:var(--sans,'Inter',system-ui,sans-serif);
+  font-size:22.8px;line-height:1.75;
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
 }
@@ -49,7 +49,7 @@ body{
 /* ── header ── */
 .hd{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2.5rem;gap:1rem;}
 .hd-left{}
-.hd-name{font-family:'Lora',Georgia,serif;font-size:2rem;font-weight:500;letter-spacing:.01em;line-height:1.15;}
+.hd-name{font-family:'Inter',system-ui,sans-serif;font-size:2rem;font-weight:600;letter-spacing:.01em;line-height:1.15;}
 .hd-contact{
   font-family:'JetBrains Mono','Fira Mono',monospace;
   font-size:.73rem;color:var(--ink-mid);margin-top:.5rem;letter-spacing:.02em;
@@ -72,7 +72,7 @@ body{
 
 /* ── bio ── */
 .bio{
-  font-family:'Lora',Georgia,serif;
+  font-family:'Inter',system-ui,sans-serif;
   font-size:1.02rem;line-height:1.82;
   border-left:2px solid var(--accent);
   padding-left:1.2rem;margin-bottom:3rem;
@@ -93,12 +93,12 @@ body{
 .entry{display:grid;grid-template-columns:106px 1fr;gap:0 1.5rem;margin-bottom:1.25rem;}
 .edate{
   font-family:'JetBrains Mono','Fira Mono',monospace;
-  font-size:.72rem;color:var(--ink-light);
+  font-size:.72rem;color:var(--date);
   padding-top:.22rem;line-height:1.5;text-align:right;
 }
-.etitle{font-family:'Lora',Georgia,serif;font-size:.97rem;font-weight:500;line-height:1.35;}
+.etitle{font-family:'Inter',system-ui,sans-serif;font-size:.97rem;font-weight:500;line-height:1.35;}
 .esub{font-family:'JetBrains Mono','Fira Mono',monospace;font-size:.73rem;color:var(--ink-mid);margin-top:.15rem;letter-spacing:.01em;}
-.edetail{font-family:'Lora',Georgia,serif;font-size:.87rem;color:var(--ink-mid);margin-top:.2rem;font-style:italic;}
+.edetail{font-family:'Inter',system-ui,sans-serif;font-size:.87rem;color:var(--ink-mid);margin-top:.2rem;font-style:italic;}
 .elist{list-style:none;margin-top:.3rem;}
 .elist li{
   font-family:'JetBrains Mono','Fira Mono',monospace;
@@ -119,7 +119,7 @@ body{
   transition:color .12s;
 }
 .rg-hd:hover .rg-inst{color:var(--accent);}
-.rg-prog{font-family:'Lora',Georgia,serif;font-size:.95rem;font-weight:500;color:var(--ink);}
+.rg-prog{font-family:'Inter',system-ui,sans-serif;font-size:.95rem;font-weight:500;color:var(--ink);}
 .rg-tog{
   font-family:'JetBrains Mono','Fira Mono',monospace;
   font-size:.66rem;color:var(--ink-light);margin-left:auto;
@@ -128,21 +128,21 @@ body{
 .rlist{list-style:none;padding-left:1rem;border-left:1px solid var(--rule);}
 .rlist.hidden{display:none;}
 .rlist li{
-  font-family:'Lora',Georgia,serif;font-style:italic;
+  font-family:'Inter',system-ui,sans-serif;font-style:italic;
   font-size:.88rem;color:var(--ink-mid);line-height:1.6;
   padding:.22rem 0;border-bottom:1px solid var(--rule);
 }
 .rlist li:last-child{border-bottom:none;}
 
 /* ── studies prose ── */
-.stxt{font-family:'Lora',Georgia,serif;font-size:.88rem;color:var(--ink-mid);line-height:1.8;}
-.yr{font-family:'JetBrains Mono','Fira Mono',monospace;color:var(--yr);font-size:.76rem;}
+.stxt{font-family:'Inter',system-ui,sans-serif;font-size:.88rem;color:var(--ink-mid);line-height:1.8;}
+.yr{font-family:'JetBrains Mono','Fira Mono',monospace;color:var(--date);font-size:.76rem;}
 
 /* ── affiliations ── */
 .alist{list-style:none;}
 .ait{padding:.5rem 0;border-bottom:1px solid var(--rule);}
 .ait:last-child{border-bottom:none;}
-.ainame{font-family:'Lora',Georgia,serif;font-size:.95rem;font-weight:500;}
+.ainame{font-family:'Inter',system-ui,sans-serif;font-size:.95rem;font-weight:500;}
 .aiurl{
   display:block;
   font-family:'JetBrains Mono','Fira Mono',monospace;
@@ -155,7 +155,7 @@ body{
 .plist{list-style:none;}
 .pit{padding:.55rem 0;border-bottom:1px solid var(--rule);}
 .pit:last-child{border-bottom:none;}
-.ptitle{font-family:'Lora',Georgia,serif;font-size:.95rem;font-weight:500;}
+.ptitle{font-family:'Inter',system-ui,sans-serif;font-size:.95rem;font-weight:500;}
 .purl{
   display:block;
   font-family:'JetBrains Mono','Fira Mono',monospace;
@@ -186,7 +186,7 @@ body{
 <div class="cv">
   <div class="hd">
     <div class="hd-left">
-      <div class="hd-name">Federico Daniel Alegría Gómez</div>
+      <div class="hd-name">federico daniel alegría gómez</div>
       <div class="hd-contact">
         <a href="mailto:federico.alegria@protonmail.com">federico.alegria@protonmail.com</a>
         &ensp;·&ensp;
@@ -195,8 +195,8 @@ body{
     </div>
     <div class="controls">
       <div class="toggle-row">
-        <button id="bes" class="on" onclick="go('es')">ES</button>
-        <button id="ben" onclick="go('en')">EN</button>
+        <button id="ben" class="on" onclick="go('en')">EN</button>
+        <button id="bes" onclick="go('es')">ES</button>
       </div>
       <div class="toggle-row">
         <button id="blt" class="on" onclick="setTheme('light')">☀</button>
@@ -209,128 +209,126 @@ body{
 <script>
 const D={
   bio:{
-    es:`Doctor en ciencias sociales enfocado en gestionar procesos de investigación, colabora como docente de grado y posgrado y es promotor de la ciencia abierta; en el sector privado se desempeña como investigador independiente en materia de datos cualitativos y cuantitativos. Realizó su estancia doctoral en la Universidad Pública de Navarra y su trabajo investigativo puede evidenciarse en publicaciones indexadas nacional e internacionalmente. En la última década, ha supervisado proyectos de investigación, ha participado en el congreso internacional de la Asociación de Estudios Latinoamericanos, es miembro de la Red Norteamericana de Realismo Crítico y ha apoyado con insumos pedagógicos a la Sociedad para el Mejoramiento de la Ciencia Psicológica.`,
-    en:`A social sciences PhD researcher focused on managing research processes, he serves as an undergraduate and graduate professor and is an advocate for open science. In the private sector, he works as an independent researcher in qualitative and quantitative data. He completed his doctoral residency at the Public University of Navarre, and his research is documented in nationally and internationally indexed publications. Over the past decade, he has supervised research projects, participated in the international congress of the Latin American Studies Association, is a member of the North American Critical Realism Network, and has contributed pedagogical resources to the Society for the Improvement of Psychological Science.`
+    en:`<b>open-research</b><br>data analysis education<br>documentary photography & writing`,
+    es:`<b>investigación abierta</b><br>docencia en análisis de datos<br>redacción y fotografía documental`
   },
   lbl:{
-    es:{edu:'Estudios superiores',work:'Experiencia laboral',acad:'Experiencia académica y profesional',teach:'Formación docente',res:'Proyectos de investigación académica',cult:'Estudios culturales, estéticos y visuales',rstu:'Estudios sobre investigación',oth:'Otros estudios',aff:'Afiliaciones',pub:'Publicaciones indexadas',hint:'// clic en cada programa para expandir las tesis supervisadas',show:'+ ver',hide:'− ocultar'},
-    en:{edu:'Higher Education',work:'Work Experience',acad:'Academic & Professional Experience',teach:'Teaching Training',res:'Developed Academic Research Projects',cult:'Aesthetic, Cultural & Visual Content Studies',rstu:'Research Studies',oth:'Other Studies',aff:'Affiliations',pub:'Indexed Publications',hint:'// click each program to expand supervised theses',show:'+ show',hide:'− hide'}
+    en:{edu:'Higher Education',work:'Work Experience',acad:'Academic & Professional Experience',teach:'Teaching Training',res:'Developed Academic Research Projects',cult:'Aesthetic, Cultural & Visual Content Studies',rstu:'Research Studies',oth:'Other Studies',aff:'Affiliations',pub:'Indexed Publications',hint:'// click each program to expand',show:'+ show',hide:'− hide'},
+    es:{edu:'Estudios superiores',work:'Experiencia laboral',acad:'Experiencia académica y profesional',teach:'Formación docente',res:'Proyectos de investigación académica',cult:'Estudios culturales, estéticos y visuales',rstu:'Estudios sobre investigación',oth:'Otros estudios',aff:'Afiliaciones',pub:'Publicaciones indexadas',hint:'// clic en cada programa para expandir',show:'+ ver',hide:'− ocultar'}
   },
   edu:{
-    es:[
-      {d:'2007–2012',t:'Licenciatura en Administración de Empresas',s:'Universidad Dr. José Matías Delgado (UJMD)'},
-      {d:'2012',t:'Diplomado de Comercio Exterior',s:'Universidad Dr. José Matías Delgado (UJMD)'},
-      {d:'2014–2016',t:'Maestría en Gestión de la Calidad',s:'Universidad Don Bosco (UDB)'},
-      {d:'2018–2026',t:'Doctorado en Ciencias Sociales',s:'UCA — Universidad Don Bosco (UDB)',x:'Estancia doctoral en la Universidad Pública de Navarra (2020)'},
-    ],
     en:[
-      {d:'2007–2012',t:"Bachelor's Degree in Business Administration",s:'Dr. José Matías Delgado University (UJMD)'},
-      {d:'2012',t:'Foreign Trade Diploma',s:'Dr. José Matías Delgado University (UJMD)'},
-      {d:'2014–2016',t:'MSc. Quality Management',s:'Don Bosco University (UDB)'},
-      {d:'2018–2026',t:'PhD. Social Sciences',s:'UCA — Don Bosco University (UDB)',x:'Doctoral residency at the Public University of Navarre (2020)'},
+      {d:'2007–2012',t:"bachelor's degree in business administration",s:'Dr. José Matías Delgado University (UJMD)'},
+      {d:'2012',t:'foreign trade diploma',s:'Dr. José Matías Delgado University (UJMD)'},
+      {d:'2014–2016',t:'msc. quality management',s:'Don Bosco University (UDB)'},
+      {d:'2018–2026',t:'phd. social sciences',s:'UCA — Don Bosco University (UDB)',x:'doctoral residency at the Public University of Navarre (2020)'},
+    ],
+    es:[
+      {d:'2007–2012',t:'licenciatura en administración de empresas',s:'Universidad Dr. José Matías Delgado (UJMD)'},
+      {d:'2012',t:'diplomado de comercio exterior',s:'Universidad Dr. José Matías Delgado (UJMD)'},
+      {d:'2014–2016',t:'maestría en gestión de la calidad',s:'Universidad Don Bosco (UDB)'},
+      {d:'2018–2026',t:'doctorado en ciencias sociales',s:'UCA — Universidad Don Bosco (UDB)',x:'estancia doctoral en la Universidad Pública de Navarra (2020)'},
     ]
   },
   work:{
-    es:[
-      {d:'2011–2012',t:'Director de Fotografía',s:'La Fábrica — Agencia de Branding'},
-      {d:'2012–2014',t:'Logística',s:'TORCO Industrial'},
-      {d:'2014–2018',t:'Desarrollo de Negocio',s:'Clan Companies'},
-    ],
     en:[
-      {d:'2011–2012',t:'Photography Director',s:'La Fábrica — Branding Studio'},
-      {d:'2012–2014',t:'Logistics',s:'TORCO Industrial'},
-      {d:'2014–2018',t:'Business Development',s:'Clan Companies'},
+      {d:'2011–2012',t:'photography director',s:'La Fábrica — branding studio'},
+      {d:'2012–2014',t:'logistics',s:'TORCO Industrial'},
+      {d:'2014–2018',t:'business development',s:'Clan Companies'},
+    ],
+    es:[
+      {d:'2011–2012',t:'director de fotografía',s:'La Fábrica — agencia de branding'},
+      {d:'2012–2014',t:'logística',s:'TORCO Industrial'},
+      {d:'2014–2018',t:'desarrollo de negocio',s:'Clan Companies'},
     ]
   },
   acad:{
-    es:[
-      {d:'2021–2022',t:'Asistente de Investigación',s:'Depto. de Sociología y Ciencias Políticas — UCA',x:'Proyecto: Violencia Estructural y COVID-19 — Presentación visual de personas bajo medidas de aislamiento y hospitalización'},
-      {d:'2023–2024',t:'Investigador Interno',s:'Depto. de Sociología y Ciencias Políticas — UCA',x:'Proyecto: Microempresas y su aporte en la construcción del tejido socioeconómico y cultural de El Salvador'},
-      {d:'2015–hoy',t:'Curador, Editor y Redactor en Temas de Fotografía',s:'Autónomo'},
-      {d:'2009–hoy',t:'Fotógrafo Documental',s:'Autónomo'},
-      {d:'2021–hoy',t:'Profesor Adjunto — Maestría en Desarrollo Territorial',s:'Universidad Centroamericana José Simeón Cañas',c:['Metodología de Investigación','Seminario de Graduación','Técnicas y Análisis Cuantitativo']},
-      {d:'2022–hoy',t:'Profesor Adjunto — Maestría en Diseño de Productos y Servicios',s:'Universidad Centroamericana José Simeón Cañas',c:['Diseño Metodológico para la Investigación en Diseño','Seminario de Graduación']},
-      {d:'2018–hoy',t:'Profesor Adjunto — Escuela de Diseño',s:'Universidad Dr. José Matías Delgado',c:['Fotografía (2018–2019)','Seminario de Graduación (2019)','Sociología Aplicada al Diseño (2020–hoy)']},
-    ],
     en:[
-      {d:'2021–2022',t:'Research Assistant',s:'Sociology & Political Sciences Dept. — UCA',x:'Project: Structural Violence and COVID-19 — Visual presentation of people under isolation and hospitalisation measurements'},
-      {d:'2023–2024',t:'Staff Researcher',s:'Sociology & Political Sciences Dept. — UCA',x:'Project: Microenterprises and their contribution to the construction of the socioeconomic and cultural fabric of El Salvador'},
-      {d:'2015–present',t:'Curator, Editor & Writer on Photography',s:'Freelance'},
-      {d:'2009–present',t:'Documentary Photographer',s:'Freelance'},
-      {d:'2021–present',t:"Associate Professor — Master's in Territorial Development",s:'José Simeón Cañas Central American University',c:['Research Methodology','Graduation Seminar','Techniques and Quantitative Analysis']},
-      {d:'2022–present',t:"Associate Professor — Master's in Product and Service Design",s:'José Simeón Cañas Central American University',c:['Methodological Design for Design Research','Graduation Seminar']},
-      {d:'2018–present',t:'Associate Professor — Design School',s:'Dr. José Matías Delgado University',c:['Photography (2018–2019)','Graduation Seminar (2019)','Sociology Applied to Design (2020–present)']},
+      {d:'2015–present',t:'documentary photographer and writer',s:'Freelance'},
+      {d:'2021–2022',t:'research assistant',s:'Sociology & Political Sciences Dept. — UCA',x:'Project: Structural Violence and COVID-19 — Visual presentation of people under isolation and hospitalisation measurements'},
+      {d:'2023–2024',t:'staff researcher',s:'Sociology & Political Sciences Dept. — UCA',x:'Project: Microenterprises and their contribution to the construction of the socioeconomic and cultural fabric of El Salvador'},
+      {d:'2021–present',t:"associate professor — Master's in Territorial Development",s:'José Simeón Cañas Central American University',c:['Research Methodology','Graduation Seminar','Techniques and Quantitative Analysis']},
+      {d:'2022–present',t:"associate professor — Master's in Product and Service Design",s:'José Simeón Cañas Central American University',c:['Methodological Design for Design Research','Graduation Seminar']},
+      {d:'2018–present',t:'associate professor — Design School',s:'Dr. José Matías Delgado University',c:['Photography (2018–2019)','Graduation Seminar (2019)','Sociology Applied to Design (2020–present)','Research Appplied to Design (2026–present)']},
+    ],
+    es:[
+      {d:'2015–hoy',t:'redactor y fotógrafo documental',s:'Autónomo'},
+      {d:'2021–2022',t:'asistente de investigación',s:'Depto. de Sociología y Ciencias Políticas — UCA',x:'Proyecto: Violencia Estructural y COVID-19 — Presentación visual de personas bajo medidas de aislamiento y hospitalización'},
+      {d:'2023–2024',t:'investigador interno',s:'Depto. de Sociología y Ciencias Políticas — UCA',x:'Proyecto: Microempresas y su aporte en la construcción del tejido socioeconómico y cultural de El Salvador'},
+      {d:'2021–hoy',t:'profesor adjunto — Maestría en Desarrollo Territorial',s:'Universidad Centroamericana José Simeón Cañas',c:['Metodología de Investigación','Seminario de Graduación','Técnicas y Análisis Cuantitativo']},
+      {d:'2022–hoy',t:'profesor adjunto — Maestría en Diseño de Productos y Servicios',s:'Universidad Centroamericana José Simeón Cañas',c:['Diseño Metodológico para la Investigación en Diseño','Seminario de Graduación']},
+      {d:'2018–hoy',t:'profesor adjunto — Escuela de Diseño',s:'Universidad Dr. José Matías Delgado',c:['Fotografía (2018–2019)','Seminario de Graduación (2019)','Sociología Aplicada al Diseño (2020–hoy)','Investigación Aplicada al Diseño (2026–hoy)']},
     ]
   },
   teach:{
-    es:[
-      {d:'2018',t:'Programa de Formación Integral en Docencia Universitaria',s:'Universidad Dr. José Matías Delgado'},
-      {d:'2021',t:'Talleres de Formación Básica en Investigación Científica',s:'Universidad Centroamericana José Simeón Cañas'},
-      {d:'2022',t:'Diplomado para Docentes del Área de Metodología de la Investigación Científica',s:'Universidad Centroamericana José Simeón Cañas'},
-      {d:'2022',t:'Competencias en la Educación Superior',s:'Universidad Centroamericana José Simeón Cañas'},
-      {d:'2022',t:'Competencias Digitales del Docente Universitario',s:'Universidad Dr. José Matías Delgado'},
-      {d:'2023',t:'Certificación Docente MINED',s:'Universidad Dr. José Matías Delgado'},
-      {d:'2023',t:'Docencia Universitaria para la Modalidad Semipresencial',s:'Universidad Centroamericana José Simeón Cañas'},
-      {d:'2026',t:'Competencias Transversales',s:'Universidad Dr. José Matías Delgado'},
-    ],
     en:[
-      {d:'2018',t:'Comprehensive Training Program in University Teaching',s:'Dr. José Matías Delgado University'},
-      {d:'2021',t:'Scientific Research Basic Workshops',s:'José Simeón Cañas Central American University'},
-      {d:'2022',t:'Scientific Research Methodology Diploma for Teachers',s:'José Simeón Cañas Central American University'},
-      {d:'2022',t:'Competences in Higher Education',s:'José Simeón Cañas Central American University'},
-      {d:'2022',t:'Digital Skills of University Teaching',s:'Dr. José Matías Delgado University'},
-      {d:'2023',t:'MINED Teaching Certification',s:'Dr. José Matías Delgado University'},
-      {d:'2023',t:'University Teaching for the Blended Modality',s:'José Simeón Cañas Central American University'},
-      {d:'2026',t:'Cross-cutting Competencies',s:'Dr. José Matías Delgado University'},
+      {d:'2018',t:'comprehensive training program in university teaching',s:'Dr. José Matías Delgado University'},
+      {d:'2021',t:'scientific research basic workshops',s:'José Simeón Cañas Central American University'},
+      {d:'2022',t:'scientific research methodology diploma for teachers',s:'José Simeón Cañas Central American University'},
+      {d:'2022',t:'competences in higher education',s:'José Simeón Cañas Central American University'},
+      {d:'2022',t:'digital skills of university teaching',s:'Dr. José Matías Delgado University'},
+      {d:'2023',t:'mined teaching certification',s:'Dr. José Matías Delgado University'},
+      {d:'2023',t:'university teaching for the blended modality',s:'José Simeón Cañas Central American University'},
+      {d:'2026',t:'cross-cutting competencies',s:'Dr. José Matías Delgado University'},
+    ],
+    es:[
+      {d:'2018',t:'programa de formación integral en docencia universitaria',s:'Universidad Dr. José Matías Delgado'},
+      {d:'2021',t:'talleres de formación básica en investigación científica',s:'Universidad Centroamericana José Simeón Cañas'},
+      {d:'2022',t:'diplomado para docentes del área de metodología de la investigación científica',s:'Universidad Centroamericana José Simeón Cañas'},
+      {d:'2022',t:'competencias en la educación superior',s:'Universidad Centroamericana José Simeón Cañas'},
+      {d:'2022',t:'competencias digitales del docente universitario',s:'Universidad Dr. José Matías Delgado'},
+      {d:'2023',t:'certificación docente mined',s:'Universidad Dr. José Matías Delgado'},
+      {d:'2023',t:'docencia universitaria para la modalidad semipresencial',s:'Universidad Centroamericana José Simeón Cañas'},
+      {d:'2026',t:'competencias transversales',s:'Universidad Dr. José Matías Delgado'},
     ]
   },
   res:{
-    es:[
-      {inst:'Universidad Centroamericana José Simeón Cañas (UCA)',prog:'Maestría en Desarrollo Territorial',items:['Influencia de las creencias en las decisiones ginecológicas y su efecto en el estado actual de la equidad de género, en mujeres de 18 a 45 años en el Cantón San Marcos de la Cruz, Municipio de Zacatecoluca','Interiorización de los comportamientos ambientales de los habitantes de la comunidad del Cerro Tecana, en Santa Ana','Actitudes ambientales de los miembros de la red trinacional de juventudes rurales de la Reserva de Biosfera Transfronteriza Trifinio Fraternidad de los municipios de La Palma y San Ignacio, Chalatenango','Intención de migrar en mujeres jóvenes de 18 a 25 años del municipio de Santa Ana Centro con familiares en el exterior, en contraste a los esfuerzos que realiza el sistema de actores, en torno a la prevención de la migración','Factibilidad de organización en la comunidad nahuahablante de Santo Domingo de Guzmán respecto a la conservación de la lengua náhuat','El capital social comunitario identificado en las iniciativas promovidas en el Centro Integral de Experimentación y Capacitación en la Agricultura y Crianza de Especies Menores (CHINAMPA), ubicado en el cantón Cabañas, municipio de Ciudad Delgado, departamento de San Salvador','Percepción de salud mental del comité de facilitadores de salud mental y de la Comunidad el Manguito en San Salvador y sus implicaciones en el desarrollo territorial','Participación de mujeres en acciones climáticas resilientes y su relación con el sector AFOLU en San Francisco Menéndez, El Salvador','Reintegración y empoderamiento económico: participación de mujeres migrantes retornadas en el desarrollo comunitario del Distrito de Jiquilisco','Gestión comunitaria del agua potable: el caso de la Asociación Comunal El Carpintero-La Pitahaya de Aguas y Desarrollo (ACCPAD), Polorós, La Unión (1994–2025)','Capital social comunitario y dinámicas grupales: el caso de Comunidades Unidas en el Cantón Natividad, Distrito de Santa Ana Centro','Los imaginarios sociales de los jóvenes líderes participantes de los programas de CECADE sobre la participación ciudadana','Pedagogía del desarrollo y movilidad laboral en profesionales de la Maestría en Desarrollo Territorial','Configuración del bienestar comunitario, la participación y cohesión social desde la identidad indígena en el distrito de Santo Domingo de Guzmán, Sonsonate','Comunicación, proceso y herramienta para la gestión de proyectos de las comunidades: El caso de Tenancingo frente a la reestructuración municipal','Determinantes de la reintegración territorial de los migrantes retornados en Usulután Oeste, Distrito de Jiquilisco, tomando el caso de CIMITRA']},
-      {inst:'Universidad Centroamericana José Simeón Cañas (UCA)',prog:'Maestría en Diseño de Productos y Servicios',items:['Principales oportunidades que la metodología del diseño centrado en las personas puede aportar a futuros procesos de elaboración de políticas públicas, específicamente aquella que fomente el desarrollo del sector artesanal en El Salvador','Manejo sostenible de la mosca blanca (Bemisia tabaci) a través del diseño y aplicación de un dispositivo selectivo de contención y control aplicado en plantaciones de tomates en condiciones protegidas','Introducción del proceso de prototipado previo a la elaboración de tejidos planos en telar de palanca en el municipio de San Sebastián','Estudio de la iconografía mesoamericana como base para el diseño de indumentaria étnica deportiva con identidad cultural para las selecciones salvadoreñas del juego de pelota mesoamericana','Exploración experimental de la ceniza de pollinaza como material sostenible mediante la metodología del diseño centrado en el material (MDD)','Innovación de los dulces típicos salvadoreños para una generación joven (18 a 28 años): aplicación del food design thinking','Caminar la ciudad: estrategias de acupuntura urbana para transformar la movilidad peatonal en Antiguo Cuscatlán, El Salvador','Signos del trauma: análisis semiótico y ludonarrativo de la representación del TEPT-C en el videojuego Alice: Madness Returns','Reconectando con la naturaleza: la biofilia aplicada al diseño de productos para el hábitat','Articulación entre el conocimiento tácito y los principios del Human-Centered Design en las prácticas profesionales de la Escuela de Órtesis y Prótesis de la Universidad Don Bosco','Rompecabezas en 3D: Integración de usabilidad, mecánica y atributos lúdicos al servicio de la educación patrimonial','Diseño de una experiencia de gamificación para la detección temprana de resistencia a la insulina en el entorno laboral de Plantosa','Del hábito al diseño: exploración de las estrategias que sostienen la práctica del ejercicio en mujeres deportistas para el diseño de una experiencia tangible orientada al bienestar físico']},
-      {inst:'Universidad Dr. José Matías Delgado (UJMD)',prog:'Licenciatura en Diseño Gráfico',items:['Sobre la construcción de confianza como elemento clave en la fotografía de moda de alta calidad','Análisis semiótico de los personajes principales inspirados en la obra literaria "O-Yarkandal" de Salarrué y diseñados por Rossemberg Rivas para el espectáculo de ópera "La Flauta Mágica" en el marco del festejo de los 50 años de aniversario del Teatro Lírico Nacional de Cuba','Estudio descriptivo del proceso de producción de largometrajes de cine ficción en El Salvador de los años 2012 a 2018','Diseño participativo de juego didáctico como herramienta de apoyo para el desarrollo de la inteligencia emocional en niños de 6 a 11 años del Centro Escolar "Marcelino García Flamenco" del municipio de Santa Tecla, El Salvador','Diseño de un planisferio celeste de la latitud de la República de El Salvador como herramienta didáctica para la enseñanza-aprendizaje a niños de 7 a 11 años en los talleres de astronomía básica para la Asociación Salvadoreña de Astronomía, en el departamento de San Salvador, El Salvador','Análisis semiótico desde el modelo actancial de Algirdas J. Greimas en las interacciones de los personajes principales en la película "Los Peces Fuera del Agua"']},
-      {inst:'Universidad Dr. José Matías Delgado (UJMD)',prog:'Licenciatura en Diseño del Producto Artesanal',items:['Estudio exploratorio-experimental del Pasto Vetiver (Chrysopogon Zizanioides): análisis de sus propiedades técnicas, físicas, químicas y mecánicas para aplicación de tejido artesanal en accesorios complementarios']},
-    ],
     en:[
       {inst:'José Simeón Cañas Central American University (UCA)',prog:"Master's in Territorial Development",items:["Influence of beliefs in gynaecological decisions and its effect on the current state of gender equality, in women from 18 to 45 years of age in the Canton of San Marcos de la Cruz, Municipality of Zacatecoluca","Environmental behaviours' internalisation of the inhabitants of the Cerro Tecana community, in Santa Ana","Environmental attitudes of members of the Trinational Network of Rural Youth of the Trifinio Fraternidad Transboundary Biosphere Reserve of the municipalities of La Palma and San Ignacio, Chalatenango","Intent to migrate in young women aged 18 to 25 from the municipality of Santa Ana Centro with relatives abroad, in contrast to the efforts made by the system of actors, regarding the prevention of migration","Feasibility of organisation in the Nahuatl-speaking community of Santo Domingo de Guzmán regarding the conservation of the Nahuatl language","Community social capital identified in the initiatives promoted at the Comprehensive Center for Experimentation and Training in Agriculture and Breeding of Minor Species (CHINAMPA), located in the Cabañas canton, municipality of Ciudad Delgado, department of San Salvador","Mental health perceptions of the mental health facilitators committee and the Manguito Community in San Salvador and their implications for territorial development","Women's Participation in resilient climate actions and their relationship with the AFOLU sector in San Francisco Menéndez, El Salvador","Reintegration and economic empowerment: participation of returned migrant women in community development in the Jiquilisco District","Community management of drinking water: the case of the El Carpintero-La Pitahaya Communal Association of Water and Development (ACCPAD), Polorós, La Unión (1994–2025)","Community social capital and group dynamics: the case of United Communities in the Natividad Canton, Santa Ana Centro District","The social imaginaries of young leaders participating in CECADE programs on citizen participation","Pedagogy of development and labor mobility among professionals in the Master's Program in Territorial Development","Configuration of community well-being, participation, and social cohesion from an indigenous identity perspective in the district of Santo Domingo de Guzmán, Sonsonate","Communication, process, and tool for community project management: The case of Tenancingo in the face of municipal restructuring","Determinants of the territorial reintegration of returned migrants in Usulután Oeste, Jiquilisco District, using the CIMITRA case study"]},
       {inst:'José Simeón Cañas Central American University (UCA)',prog:"Master's in Product and Service Design",items:["Main opportunities that the people-centred design methodology can bring to future public policy development processes, specifically one that promotes the development of the artisanal sector in El Salvador","Sustainable management of the whitefly (Bemisia tabaci) through the design and application of a selective containment and control device applied in tomato plantations under protected conditions","Introduction of the prototyping process prior to the elaboration of flat weaving on a lever loom in the municipality of San Sebastián","Study of mesoamerican iconography as a basis for the design of ethnic sportswear with cultural identity for the salvadoran national teams of the mesoamerican ball game","Experimental exploration of pollinaza ash as a sustainable material using the material-centered design (MCD) methodology","Innovation of typical salvadoran sweets for a young generation (18 to 28 years old): application of food design thinking","Walking the city: urban acupuncture strategies to transform pedestrian mobility in Antiguo Cuscatlán, El Salvador","Signs of trauma: A semiotic and ludonarrative analysis of PTSD representation in the Alice: Madness Returns video game","Reconnecting with nature: biophilia applied to product design for the habitat","Articulation between tacit knowledge and the principles of human-centered design in the professional practices of the School of Orthotics and Prosthetics at Don Bosco University","3D Puzzles: Integrating Usability, Mechanics, and Playful Attributes in the Service of Heritage Education","Designing a gamification experience for the early detection of insulin resistance in the Plantosa workplace","From habit to design: exploring the strategies that support exercise practice in female athletes for the design of a tangible experience oriented towards physical well-being"]},
       {inst:'Dr. José Matías Delgado University (UJMD)',prog:'Graphic Design Degree',items:["On building trust as a key element in high quality fashion photography","Semiotic analysis of the main characters inspired by the literary work of Salarrué \"O-Yarkandal\" and designed by Rossemberg Rivas for the opera show \"The Magic Flute\" in the context of the celebration of the 50th anniversary of the National Lyric Theatre of Cuba","Descriptive study of the production process behind films in El Salvador from 2012 to 2018","Participatory design of a didactic game as a support tool for the development of emotional intelligence in children within 6 to 11 years old from the \"Marcelino García Flamenco\" School Centre at the Santa Tecla municipality in El Salvador","Design of a celestial planisphere of the latitude of the Republic of El Salvador as a didactic tool for teaching-learning to children aged between 7 to 11 in the basic astronomy workshops for the Salvadoran Astronomy Association, in the department of San Salvador, El Salvador","Semiotic analysis from Algirdas J. Greimas actantial model in the interactions of the main characters in the Salvadoran film \"The Fish Out of Water\""]},
       {inst:'Dr. José Matías Delgado University (UJMD)',prog:'Handcrafted Product Design Degree',items:["Exploratory-experimental study of Vetiver Grass (Chrysopogon Zizanioides): analysis of its technical, physical, chemical, and mechanical properties for application in handcrafted accessories"]},
+    ],
+    es:[
+      {inst:'Universidad Centroamericana José Simeón Cañas (UCA)',prog:'Maestría en Desarrollo Territorial',items:['Influencia de las creencias en las decisiones ginecológicas y su efecto en el estado actual de la equidad de género, en mujeres de 18 a 45 años en el Cantón San Marcos de la Cruz, Municipio de Zacatecoluca','Interiorización de los comportamientos ambientales de los habitantes de la comunidad del Cerro Tecana, en Santa Ana','Actitudes ambientales de los miembros de la red trinacional de juventudes rurales de la Reserva de Biosfera Transfronteriza Trifinio Fraternidad de los municipios de La Palma y San Ignacio, Chalatenango','Intención de migrar en mujeres jóvenes de 18 a 25 años del municipio de Santa Ana Centro con familiares en el exterior, en contraste a los esfuerzos que realiza el sistema de actores, en torno a la prevención de la migración','Factibilidad de organización en la comunidad nahuahablante de Santo Domingo de Guzmán respecto a la conservación de la lengua náhuat','El capital social comunitario identificado en las iniciativas promovidas en el Centro Integral de Experimentación y Capacitación en la Agricultura y Crianza de Especies Menores (CHINAMPA), ubicado en el cantón Cabañas, municipio de Ciudad Delgado, departamento de San Salvador','Percepción de salud mental del comité de facilitadores de salud mental y de la Comunidad el Manguito en San Salvador y sus implicaciones en el desarrollo territorial','Participación de mujeres en acciones climáticas resilientes y su relación con el sector AFOLU en San Francisco Menéndez, El Salvador','Reintegración y empoderamiento económico: participación de mujeres migrantes retornadas en el desarrollo comunitario del Distrito de Jiquilisco','Gestión comunitaria del agua potable: el caso de la Asociación Comunal El Carpintero-La Pitahaya de Aguas y Desarrollo (ACCPAD), Polorós, La Unión (1994–2025)','Capital social comunitario y dinámicas grupales: el caso de Comunidades Unidas en el Cantón Natividad, Distrito de Santa Ana Centro','Los imaginarios sociales de los jóvenes líderes participantes de los programas de CECADE sobre la participación ciudadana','Pedagogía del desarrollo y movilidad laboral en profesionales de la Maestría en Desarrollo Territorial','Configuración del bienestar comunitario, la participación y cohesión social desde la identidad indígena en el distrito de Santo Domingo de Guzmán, Sonsonate','Comunicación, proceso y herramienta para la gestión de proyectos de las comunidades: El caso de Tenancingo frente a la reestructuración municipal','Determinantes de la reintegración territorial de los migrantes retornados en Usulután Oeste, Distrito de Jiquilisco, tomando el caso de CIMITRA']},
+      {inst:'Universidad Centroamericana José Simeón Cañas (UCA)',prog:'Maestría en Diseño de Productos y Servicios',items:['Principales oportunidades que la metodología del diseño centrado en las personas puede aportar a futuros procesos de elaboración de políticas públicas, específicamente aquella que fomente el desarrollo del sector artesanal en El Salvador','Manejo sostenible de la mosca blanca (Bemisia tabaci) a través del diseño y aplicación de un dispositivo selectivo de contención y control aplicado en plantaciones de tomates en condiciones protegidas','Introducción del proceso de prototipado previo a la elaboración de tejidos planos en telar de palanca en el municipio de San Sebastián','Estudio de la iconografía mesoamericana como base para el diseño de indumentaria étnica deportiva con identidad cultural para las selecciones salvadoreñas del juego de pelota mesoamericana','Exploración experimental de la ceniza de pollinaza como material sostenible mediante la metodología del diseño centrado en el material (MDD)','Innovación de los dulces típicos salvadoreños para una generación joven (18 a 28 años): aplicación del food design thinking','Caminar la ciudad: estrategias de acupuntura urbana para transformar la movilidad peatonal en Antiguo Cuscatlán, El Salvador','Signos del trauma: análisis semiótico y ludonarrativo de la representación del TEPT-C en el videojuego Alice: Madness Returns','Reconectando con la naturaleza: la biofilia aplicada al diseño de productos para el hábitat','Articulación entre el conocimiento tácito y los principios del Human-Centered Design en las prácticas profesionales de la Escuela de Órtesis y Prótesis de la Universidad Don Bosco','Rompecabezas en 3D: Integración de usabilidad, mecánica y atributos lúdicos al servicio de la educación patrimonial','Diseño de una experiencia de gamificación para la detección temprana de resistencia a la insulina en el entorno laboral de Plantosa','Del hábito al diseño: exploración de las estrategias que sostienen la práctica del ejercicio en mujeres deportistas para el diseño de una experiencia tangible orientada al bienestar físico']},
+      {inst:'Universidad Dr. José Matías Delgado (UJMD)',prog:'Licenciatura en Diseño Gráfico',items:['Sobre la construcción de confianza como elemento clave en la fotografía de moda de alta calidad','Análisis semiótico de los personajes principales inspirados en la obra literaria "O-Yarkandal" de Salarrué y diseñados por Rossemberg Rivas para el espectáculo de ópera "La Flauta Mágica" en el marco del festejo de los 50 años de aniversario del Teatro Lírico Nacional de Cuba','Estudio descriptivo del proceso de producción de largometrajes de cine ficción en El Salvador de los años 2012 a 2018','Diseño participativo de juego didáctico como herramienta de apoyo para el desarrollo de la inteligencia emocional en niños de 6 a 11 años del Centro Escolar "Marcelino García Flamenco" del municipio de Santa Tecla, El Salvador','Diseño de un planisferio celeste de la latitud de la República de El Salvador como herramienta didáctica para la enseñanza-aprendizaje a niños de 7 a 11 años en los talleres de astronomía básica para la Asociación Salvadoreña de Astronomía, en el departamento de San Salvador, El Salvador','Análisis semiótico desde el modelo actancial de Algirdas J. Greimas en las interacciones de los personajes principales en la película "Los Peces Fuera del Agua"']},
+      {inst:'Universidad Dr. José Matías Delgado (UJMD)',prog:'Licenciatura en Diseño del Producto Artesanal',items:['Estudio exploratorio-experimental del Pasto Vetiver (Chrysopogon Zizanioides): análisis de sus propiedades técnicas, físicas, químicas y mecánicas para aplicación de tejido artesanal en accesorios complementarios']},
     ]
   },
   stud:{
     cult:{
-      es:`<span class="yr">[2015]</span> Universidad Miguel Hernández de Elche: Técnicas de Composición Pictórica · Universidad de Texas: Jazz Appreciation · Universidad de Pennsylvania: Poesía Moderna y Contemporánea de Estados Unidos &ensp;<span class="yr">[2016]</span> MoMA: Ideas, Investigación, Actividades y Arte Moderno · A Través de la Fotografía · Universidad de Harvard: Poesía Moderna de Estados Unidos · Shaw Academy: Diploma en Fotografía Digital &ensp;<span class="yr">[2017]</span> Node Center: Fotografía Artística y Contemporánea · Introducción a La Curaduría · Crítica de Arte Escrita · Universidad de Leicester: Detrás de la Escena en El Museo del Siglo XXI &ensp;<span class="yr">[2018]</span> Node Center: Fotografía Líquida · Magnum Photos: El Arte de la Fotografía de Calle`,
-      en:`<span class="yr">[2015]</span> Miguel Hernández University of Elche: Pictorial Composition Techniques · University of Texas: Jazz Appreciation · University of Pennsylvania: Modern and Contemporary Poetry of the United States &ensp;<span class="yr">[2016]</span> MoMA: Ideas, Research, Activities and Modern Art · Through Photography · Harvard University: Modern American Poetry · Shaw Academy: Diploma in Digital Photography &ensp;<span class="yr">[2017]</span> Node Centre: Artistic and Contemporary Photography · Introduction to Curation · Art Criticism & Writing · University of Leicester: Behind the Scene at the 21st Century Museum &ensp;<span class="yr">[2018]</span> Node Centre: Liquid Photography · Magnum: The Art of Street Photography`
+      en:`<span class="yr">[2015]</span> Miguel Hernández University of Elche: Pictorial Composition Techniques · University of Texas: Jazz Appreciation · University of Pennsylvania: Modern and Contemporary Poetry of the United States &ensp;<span class="yr">[2016]</span> MoMA: Ideas, Research, Activities and Modern Art · Through Photography · Harvard University: Modern American Poetry · Shaw Academy: Diploma in Digital Photography &ensp;<span class="yr">[2017]</span> Node Centre: Artistic and Contemporary Photography · Introduction to Curation · Art Criticism & Writing · University of Leicester: Behind the Scene at the 21st Century Museum &ensp;<span class="yr">[2018]</span> Node Centre: Liquid Photography · Magnum: The Art of Street Photography`,
+      es:`<span class="yr">[2015]</span> Universidad Miguel Hernández de Elche: Técnicas de Composición Pictórica · Universidad de Texas: Jazz Appreciation · Universidad de Pennsylvania: Poesía Moderna y Contemporánea de Estados Unidos &ensp;<span class="yr">[2016]</span> MoMA: Ideas, Investigación, Actividades y Arte Moderno · A Través de la Fotografía · Universidad de Harvard: Poesía Moderna de Estados Unidos · Shaw Academy: Diploma en Fotografía Digital &ensp;<span class="yr">[2017]</span> Node Center: Fotografía Artística y Contemporánea · Introducción a La Curaduría · Crítica de Arte Escrita · Universidad de Leicester: Detrás de la Escena en El Museo del Siglo XXI &ensp;<span class="yr">[2018]</span> Node Center: Fotografía Líquida · Magnum Photos: El Arte de la Fotografía de Calle`
     },
     rstu:{
-      es:`<span class="yr">[2017]</span> Universidad de Leicester: Ética de La Investigación en la Sociedad · Universidad Autónoma de Madrid: Idealismo Filosófico &ensp;<span class="yr">[2019]</span> Universidad de Amsterdam: Especialización en Métodos y Estadística en Ciencias Sociales · UCA: Uso de R en Ciencias Sociales, Aplicaciones con la EHPM · La Escuela de Frankfurt, tres generaciones de teoría crítica &ensp;<span class="yr">[2020]</span> Universidad de Queensland: Antropología de los Problemas Mundiales Actuales &ensp;<span class="yr">[2021]</span> Universidad de Amsterdam: Teoría Sociológica Clásica · UCA: Epistemología e Investigación en las Ciencias Sociales · Introducción a la Computación Estadística con R · Introducción al Análisis Multivariado`,
-      en:`<span class="yr">[2017]</span> University of Leicester: Ethics of Research in Society · Autonomous University of Madrid: Philosophical Idealism &ensp;<span class="yr">[2019]</span> University of Amsterdam: Methods and Statistics in Social Sciences Specialisation · UCA: Use of R in Social Sciences, Applications with the EHPM · The Frankfurt School, Three Generations of Critical Theory &ensp;<span class="yr">[2020]</span> University of Queensland: Anthropology of Current World Issues &ensp;<span class="yr">[2021]</span> University of Amsterdam: Classical Sociological Theory · UCA: Epistemology and Research in the Social Sciences · Introduction to Statistical Computing with R · Introduction to Multivariate Analysis`
+      en:`<span class="yr">[2017]</span> University of Leicester: Ethics of Research in Society · Autonomous University of Madrid: Philosophical Idealism &ensp;<span class="yr">[2019]</span> University of Amsterdam: Methods and Statistics in Social Sciences Specialisation · UCA: Use of R in Social Sciences, Applications with the EHPM · The Frankfurt School, Three Generations of Critical Theory &ensp;<span class="yr">[2020]</span> University of Queensland: Anthropology of Current World Issues &ensp;<span class="yr">[2021]</span> University of Amsterdam: Classical Sociological Theory · UCA: Epistemology and Research in the Social Sciences · Introduction to Statistical Computing with R · Introduction to Multivariate Analysis`,
+      es:`<span class="yr">[2017]</span> Universidad de Leicester: Ética de La Investigación en la Sociedad · Universidad Autónoma de Madrid: Idealismo Filosófico &ensp;<span class="yr">[2019]</span> Universidad de Amsterdam: Especialización en Métodos y Estadística en Ciencias Sociales · UCA: Uso de R en Ciencias Sociales, Aplicaciones con la EHPM · La Escuela de Frankfurt, tres generaciones de teoría crítica &ensp;<span class="yr">[2020]</span> Universidad de Queensland: Antropología de los Problemas Mundiales Actuales &ensp;<span class="yr">[2021]</span> Universidad de Amsterdam: Teoría Sociológica Clásica · UCA: Epistemología e Investigación en las Ciencias Sociales · Introducción a la Computación Estadística con R · Introducción al Análisis Multivariado`
     },
     oth:{
-      es:`<span class="yr">[2016]</span> Universidad de Reading: Entendiendo El Clima · Sociedad de Ergonomistas de México: Ergonomía Industrial Aplicada y Biomecánica · Universidad de Manchester: Manejo Responsable, Practicando la sostenibilidad, responsabilidad y ética · Universidad de Lancaster: Seguridad Alimentaria &ensp;<span class="yr">[2017]</span> Universidad Centroamericana José Simeón Cañas: Gestión de Proyectos`,
-      en:`<span class="yr">[2016]</span> University of Reading: Understanding Weather · Ergonomists Society of Mexico: Applied Industrial Ergonomics and Biomechanics · University of Manchester: Responsible Management: Practising Sustainability, Responsibility and Ethics · University of Lancaster: Food Security &ensp;<span class="yr">[2017]</span> José Simeón Cañas Central American University: Project Management`
+      en:`<span class="yr">[2016]</span> University of Reading: Understanding Weather · Ergonomists Society of Mexico: Applied Industrial Ergonomics and Biomechanics · University of Manchester: Responsible Management: Practising Sustainability, Responsibility and Ethics · University of Lancaster: Food Security &ensp;<span class="yr">[2017]</span> José Simeón Cañas Central American University: Project Management`,
+      es:`<span class="yr">[2016]</span> Universidad de Reading: Entendiendo El Clima · Sociedad de Ergonomistas de México: Ergonomía Industrial Aplicada y Biomecánica · Universidad de Manchester: Manejo Responsable, Practicando la sostenibilidad, responsabilidad y ética · Universidad de Lancaster: Seguridad Alimentaria &ensp;<span class="yr">[2017]</span> Universidad Centroamericana José Simeón Cañas: Gestión de Proyectos`
     }
   },
   aff:[
-    {es:'Red Norteamericana de Realismo Crítico',en:'North American Critical Realism Network',url:'https://www.sandyrao.com/collaboratory#Critical-Realism'},
-    {es:'Red de Documentación Social',en:'The Social Documentary Network',url:'https://www.socialdocumentary.net/'},
-    {es:'Revista de Estudios Multidisciplinarios en Derechos Humanos y Ciencia',en:'The Journal of Multidisciplinary Studies in Human Rights & Science',url:'https://knowmadinstitut.org/journal/index.php/jms'},
-    {es:'Sociedad para el Mejoramiento de la Ciencia Psicológica',en:'The Society for the Improvement of Psychological Science',url:'https://improvingpsych.org/'},
+    {en:'North American Critical Realism Network',es:'Red Norteamericana de Realismo Crítico',url:'https://www.sandyrao.com/collaboratory#Critical-Realism'},
+    {en:'The Social Documentary Network',es:'Red de Documentación Social',url:'https://www.socialdocumentary.net/'},
+    {en:'The Journal of Multidisciplinary Studies in Human Rights & Science',es:'Revista de Estudios Multidisciplinarios en Derechos Humanos y Ciencia',url:'https://knowmadinstitut.org/journal/index.php/jms'},
+    {en:'The Society for the Improvement of Psychological Science',es:'Sociedad para el Mejoramiento de la Ciencia Psicológica',url:'https://improvingpsych.org/'},
   ],
   pub:[
-    {es:'Fotografía Ubicua',en:'Ubiquitous Photography',url:'https://doi.org/10.5377/typ.v1i37.14063'},
-    {es:'Brecha Generacional del Aprendizaje',en:'Learning Generation Gap',url:'http://dx.doi.org/10.5281/zenodo.7117293'},
-    {es:'Presentación Fotográfica de la Persona bajo Medidas de Aislamiento por COVID-19',en:'Photographic Presentation of the Person under Isolation Measures due to COVID-19',url:'https://doi.org/10.51378/eca.v77i770.7597'},
-    {es:'Desarrollo Territorial en El Salvador: Dinámicas y tareas académicas',en:'Territorial Development in El Salvador: Academic Dynamics and Tasks',url:'https://doi.org/10.51378/eca.v79i779.9222'},
-    {es:'Diseño como estrategia de transformación cultural y empresarial',en:'Design as a Strategy for Cultural and Business Transformation',url:'https://doi.org/10.51378/reuca.vi22.10274'},
-    {es:'Transmisión intergeneracional de valores en microempresas artesanales: La Palma, Chalatenango',en:'Intergenerational Transmission of Values in Artisan Microenterprises: La Palma, Chalatenango',url:'https://doi.org/10.51378/reuca.vi22.10828'},
-    {es:'La disposición para aprender de estudiantes de Diseño de la UCA',en:'The Willingness to Learn of Design Students at the José Simeón Cañas Central American University',url:'https://doi.org/10.51378/realidad.vi168.12385'},
+    {en:'Ubiquitous Photography',es:'Fotografía Ubicua',url:'https://doi.org/10.5377/typ.v1i37.14063'},
+    {en:'Learning Generation Gap',es:'Brecha Generacional del Aprendizaje',url:'http://dx.doi.org/10.5281/zenodo.7117293'},
+    {en:'Photographic Presentation of the Person under Isolation Measures due to COVID-19',es:'Presentación Fotográfica de la Persona bajo Medidas de Aislamiento por COVID-19',url:'https://doi.org/10.51378/eca.v77i770.7597'},
+    {en:'Territorial Development in El Salvador: Academic Dynamics and Tasks',es:'Desarrollo Territorial en El Salvador: Dinámicas y tareas académicas',url:'https://doi.org/10.51378/eca.v79i779.9222'},
+    {en:'Design as a Strategy for Cultural and Business Transformation',es:'Diseño como estrategia de transformación cultural y empresarial',url:'https://doi.org/10.51378/reuca.vi22.10274'},
+    {en:'Intergenerational Transmission of Values in Artisan Microenterprises: La Palma, Chalatenango',es:'Transmisión intergeneracional de valores en microempresas artesanales: La Palma, Chalatenango',url:'https://doi.org/10.51378/reuca.vi22.10828'},
+    {en:'The Willingness to Learn of Design Students at the José Simeón Cañas Central American University',es:'La disposición para aprender de estudiantes de Diseño de la UCA',url:'https://doi.org/10.51378/realidad.vi168.12385'},
   ]
 };
 
 const open={};
-let lang='es';
+let lang='en';
 
 function sec(title,html){return`<div class="sec"><div class="sec-hd">${title}</div>${html}</div>`;}
 
@@ -400,7 +398,7 @@ function go(l){render(l);}
 // init from OS preference
 const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
 setTheme(prefersDark?'dark':'light');
-render('es');
+render('en');
 </script>
 </body>
 </html>
